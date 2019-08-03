@@ -1,0 +1,259 @@
+body {
+  font-family: "Montserrat";
+}
+
+
+#title {
+  background-color: #393e46;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  line-height: 1.5;
+  color: white;
+}
+
+h2 {
+  color: white;
+  font-family: "Montserrat-bold", sans-serif;
+  font-size: 2.5rem;
+  line-height: 1.2;
+
+}
+
+
+h3 {
+  font-family: 'Montserrat-bold', sans-serif;
+  font-weight: bolder;
+}
+
+p {
+  color: #8f8f8f;
+  font-weight: bold;
+}
+
+.container-fluid {
+  padding: 2% 10%;
+}
+
+/* Navigation bar */
+
+.navbar {
+  padding: 0 0 5%;
+}
+
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-right: 5%;
+
+}
+
+.nav-item {
+  padding: 0 12px;
+}
+
+.nav-link {
+  font-size: 18px;
+}
+
+.butt {
+  margin: 5% 3% 5% 0;
+}
+
+.title-image {
+  width: 50%;
+  height: 95%;
+  min-width: 300px;
+  transform: rotate(25deg);
+  margin-left: 20%;
+}
+
+#features {
+  padding: 7% 12%;
+  background-color: white;
+}
+
+.feature-box {
+  text-align: center;
+  padding: 5%;
+}
+
+.icon {
+  padding-bottom: 2%;
+}
+
+.icon:hover {
+  color: #8f8f8f;
+}
+
+#testimonials {
+  padding: 7% 10%;
+  background-color: #393e46;
+  text-align: center;
+}
+
+.carousel-item h2 {
+  font-size: 1.5rem;
+}
+
+
+.carousel-item {
+  padding: 7% 15%;
+}
+
+.tees {
+
+  width: 50%;
+  border-radius: 20%;
+  margin: 20px;
+
+}
+
+.logo {
+  padding-right: 2%;
+  color: white;
+
+}
+
+.pricehead {
+  color: black;
+}
+
+.pricing-cards {}
+
+#pricing {
+  /* padding: 100px; */
+  width: 80%;
+  padding: 100px 0;
+  margin: auto;
+  text-align: center;
+}
+
+.pricehead {
+  font-family: "Montserrat-bolder", sans-serif;
+  font-weight: bold;
+  color: #393e46;
+}
+
+.pricecol {
+  padding: 3% 2%;
+}
+
+
+@media (max-width:1024px) {
+  #title {
+    text-align: center;
+  }
+
+  .title-image {
+    transform: rotate(0);
+    margin: auto;
+    width: 85%;
+  }
+}
+
+@media (max-width:768px) {
+  .title-text {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 512px) {
+  .butt {
+    width: 75%;
+  }
+
+  .fab {
+    padding: 0 15px 0 0;
+    text-align: left;
+  }
+}
+
+/* get informed */
+
+
+#footer {
+  /* padding: 7% 5%; */
+  text-align: center;
+}
+
+.social-icon {
+  margin: 20px 10px;
+  font-size: 2rem;
+  padding: 12px;
+
+}
+
+
+/* LOGIN */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+form {
+  border: 3px solid #f1f1f1;
+}
+
+input[type=text],
+input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.lgnbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.lgnbtn:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+
+  .cancelbtn {
+    width: 100%;
+  }
+}
