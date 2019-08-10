@@ -7,6 +7,7 @@
    <link rel="stylesheet" href="login2.css">
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
    <script src="https://kit.fontawesome.com/482a35d949.js"></script>
+   
    <title>login</title>
 </head>
 <body>
@@ -58,7 +59,7 @@
 
             <!-- Signup Form -->
             <div class="signup form-peice">
-               <form class="signup-form" action="#" method="post">
+               <form class="signup-form" id="signupform" action="#" method="post">
 
                   <div class="form-group">
                      <label for="name">Full Name</label>
@@ -103,9 +104,38 @@
 
    
 </div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
 
-<script src="login2.js"></script>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-firestore.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+     <script>
+         // Your web app's Firebase configuration
+         var firebaseConfig = {
+           apiKey: "AIzaSyDt95XwzO8ythQlz_ZXfLoL9JDTUaWPz2E",
+           authDomain: "learning-bc569.firebaseapp.com",
+           databaseURL: "https://learning-bc569.firebaseio.com",
+           projectId: "learning-bc569",
+           storageBucket: "",
+           messagingSenderId: "967229770657",
+           appId: "1:967229770657:web:c9931b88540e75a3"
+         };
+         // Initialize Firebase
+         firebase.initializeApp(firebaseConfig);
+
+         // for firestore and auth
+         const auth = firebase.auth();
+         const db = firebase.firestore();
+
+         // db update settings
+         // db.settings({timestampsInSnapshots : true});
+       </script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+       <script src="scripts/auth.js"></script>
+       <script src="login2.js"></script>
 
 </body>
 </html>

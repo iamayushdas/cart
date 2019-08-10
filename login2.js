@@ -90,15 +90,17 @@ $(document).ready(function () {
     });
 
 
-    // Form submit
+    // form
     $('form.signup-form').submit(function (event) {
         event.preventDefault();
-
+        
+        
+    
         if (usernameError == true || emailError == true || passwordError == true || passConfirm == true) {
             $('.name, .email, .pass, .passConfirm').blur();
         } else {
             $('.signup, .login').addClass('switched');
-
+    
             setTimeout(function () {
                 $('.signup, .login').hide();
             }, 700);
@@ -119,6 +121,7 @@ $(document).ready(function () {
             }, 700);
         }
     });
+
 
     // Reload page
     $('a.profile').on('click', function () {
