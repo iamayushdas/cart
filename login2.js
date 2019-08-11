@@ -1,6 +1,24 @@
-// const request = require("request");
-// const $ = require('jquery');
-/*global $, document, window, setTimeout, navigator, console, location*/
+const loggedOutLinks = document.querySelectorAll('.logged-out');
+const loggedInLinks= document.querySelectorAll('.logged-in');
+
+
+const setupUI = (user) => {
+
+    if(user){
+        //toggle ui elements
+    loggedInLinks.forEach(item => item.style.display = 'block');
+    loggedOutLinks.forEach(item => item.style.display = 'none'); 
+ 
+    
+    }else{
+     loggedInLinks.forEach(item => item.style.display = 'none');
+     loggedOutLinks.forEach(item => item.style.display = 'block'); 
+    }
+    
+}
+
+
+
 $(document).ready(function () {
 
     'use strict';

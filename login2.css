@@ -30,6 +30,15 @@ section#formHolder {
 	padding: 50px 0;
 }
 
+.navbar {
+	padding: 0 0 5%;
+  }
+
+.logoutbtn{
+	padding-top: 2px;
+	color: #777
+}
+
 .brand {
 	padding: 20px;
 	background: url(https://goo.gl/A0ynht);
@@ -266,6 +275,22 @@ section#formHolder {
 	font-family: "Montserrat", sans-serif;
 }
 
+.lgtbtn{
+	font-size: 12px;
+	text-transform: uppercase;
+	padding: 5px 30px;
+    margin-bottom: 2px;
+	background: #f95959;
+	color: #fff;
+	border-radius: 30px;
+	margin-right: 20px;
+	border: none;
+	font-family: "Montserrat", sans-serif;
+}
+	
+
+
+
 .form form .CTA a.switch {
 	font-size: 13px;
 	font-weight: 400;
@@ -366,3 +391,4 @@ footer p a:hover, footer p a:focus:hover {
 		font-size: 50px !important;
 	}
 }
+

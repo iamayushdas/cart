@@ -11,19 +11,22 @@
    <title>login</title>
 </head>
 <body>
-   
+      
 <div class="container">
+   
    <section id="formHolder">
 
       <div class="row">
 
          <!-- Brand Box -->
          <div class="col-sm-6 brand">
-            <a href="index.html" class="logo"><i class="fas fa-chevron-circle-left fa-2x" size: 5x></i></a>
-
+             
+            <input class="lgtbtn" type="submit"  value="logout" id="logout">
             <div class="heading">
                <h2>Collcart</h2>
                <p>Your Right Choice</p>
+               <a href="index.html" class="logo"><i class="fas fa-chevron-circle-left fa-2x" size: 5x></i></a>
+               
             </div>
 
             <div class="success-msg">
@@ -38,15 +41,15 @@
 
             <!-- Login Form -->
             <div class="login form-peice switched">
-               <form class="login-form" action="#" method="post">
+               <form class="login-form" id="login-form" action="#" method="post">
                   <div class="form-group">
                      <label for="loginemail">Email Adderss</label>
-                     <input type="email" name="loginemail" id="loginemail" required>
+                     <input type="email" name="loginemail" id="login-email" required>
                   </div>
 
                   <div class="form-group">
                      <label for="loginPassword">Password</label>
-                     <input type="password" name="loginPassword" id="loginPassword" required>
+                     <input type="password" name="loginPassword" id="login-Password" required>
                   </div>
 
                   <div class="CTA">
@@ -84,16 +87,13 @@
                      <span class="error"></span>
                   </div>
 
-                  <div class="form-group">
-                     <label for="passwordCon">Confirm Password</label>
-                     <input type="password" name="passwordCon" id="passwordCon" class="passConfirm">
-                     <span class="error"></span>
-                  </div>
-
+                  
                   <div class="CTA">
                      <input type="submit" value="Signup Now" id="submit">
-                     <a href="#" class="switch">I have an account</a>
+                     
+                     <a href="#"  class="switch">I have an account</a>
                   </div>
+                  
                </form>
             </div><!-- End Signup Form -->
          </div>
@@ -131,7 +131,7 @@
          const db = firebase.firestore();
 
          // db update settings
-         // db.settings({timestampsInSnapshots : true});
+         db.settings({timestampsInSnapshots : true});
        </script>
        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
        <script src="scripts/auth.js"></script>

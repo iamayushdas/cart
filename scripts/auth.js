@@ -1,6 +1,23 @@
-$(document).ready(function() {
+// auth status
+auth.onAuthStateChanged(user =>{
+    if(user){
+        console.log('user logged in', user);
+        setupUI(user);
+        alert("You are already logged in")
+    }else{
+        console.log('user logged out');
+        setupUI();
+    }
+});
+
+
+
+
 
 // Form submit
+$(document).ready(function() {
+
+
 
 var nameInput = document.getElementById('name');
 var emailInput = document.getElementById('email');
@@ -9,10 +26,6 @@ $('form.signup-form').submit(function (event) {
     event.preventDefault();
  
     
-    
-   
-    // console.log(nameInput.value,emailInput.value,passInput.value);
-    
      auth.createUserWithEmailAndPassword(emailInput.value,passInput.value).then(cred => {
      console.log(cred.user);
        
@@ -20,4 +33,27 @@ $('form.signup-form').submit(function (event) {
 
 });
 
-})
+});
+
+// logout
+const logout = document.querySelector('#logout');
+logout.addEventListener('click', (e)=> {
+    e.preventDefault();
+    auth.signOut()
+});
+
+// login
+const loginForm = document.querySelector('#login-form');
+loginForm.addEventListener('click', (e)=> {
+    e.preventDefault();
+
+    // get user info
+
+    const email = loginForm['login-email'].value;
+    const password = loginForm['login-Password'].value;
+
+    auth.signInWithEmailAndPassword(email, password).then(cred => {
+      
+        loginForm.reset();
+    });
+});
