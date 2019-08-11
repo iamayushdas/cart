@@ -3,7 +3,7 @@ auth.onAuthStateChanged(user =>{
     if(user){
         console.log('user logged in', user);
         setupUI(user);
-        alert("You are already logged in")
+        
     }else{
         console.log('user logged out');
         setupUI();
@@ -39,7 +39,8 @@ $('form.signup-form').submit(function (event) {
 const logout = document.querySelector('#logout');
 logout.addEventListener('click', (e)=> {
     e.preventDefault();
-    auth.signOut()
+    auth.signOut();
+    alert('logged out')
 });
 
 // login
@@ -53,7 +54,7 @@ loginForm.addEventListener('click', (e)=> {
     const password = loginForm['login-Password'].value;
 
     auth.signInWithEmailAndPassword(email, password).then(cred => {
-      
+        alert("logged in Successfully!")
         loginForm.reset();
     });
 });

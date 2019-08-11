@@ -21,17 +21,19 @@
          <!-- Brand Box -->
          <div class="col-sm-6 brand">
              
-            <input class="lgtbtn" type="submit"  value="logout" id="logout">
+               <a href="index.html" class="logo"><i class="fas fa-chevron-circle-left fa-2x" size: 5x></i></a> 
             <div class="heading">
                <h2>Collcart</h2>
                <p>Your Right Choice</p>
-               <a href="index.html" class="logo"><i class="fas fa-chevron-circle-left fa-2x" size: 5x></i></a>
+              
+               
                
             </div>
-
+            
             <div class="success-msg">
                <p>Great! You are one of our members now</p>
-               <a href="index.html" class="profile">explore now</a>
+               <a href="index.html"  class="profile">explore now</a>
+               
             </div>
          </div>
 
@@ -42,19 +44,24 @@
             <!-- Login Form -->
             <div class="login form-peice switched">
                <form class="login-form" id="login-form" action="#" method="post">
-                  <div class="form-group">
+                  <div class="form-group logged-out">
                      <label for="loginemail">Email Adderss</label>
-                     <input type="email" name="loginemail" id="login-email" required>
+                     <input type="email" name="loginemail" class="login" id="login-email" required>
                   </div>
 
-                  <div class="form-group">
+                  <div class="form-group logged-out">
                      <label for="loginPassword">Password</label>
-                     <input type="password" name="loginPassword" id="login-Password" required>
+                     <input type="password" name="loginPassword"  id="login-Password" required>
                   </div>
 
-                  <div class="CTA">
+                  <div class="CTA logged-out">
                      <input type="submit" value="Login">
+                     
                      <a href="#" class="switch">I'm New</a>
+
+                  </div>
+                  <div class="logged-in">
+                        <input class="lgtbtn" type="submit"  value="logout" id="logout">
                   </div>
                </form>
             </div><!-- End Login Form -->
@@ -131,7 +138,7 @@
          const db = firebase.firestore();
 
          // db update settings
-         db.settings({timestampsInSnapshots : true});
+         // db.settings({timestampsInSnapshots : true});
        </script>
        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
        <script src="scripts/auth.js"></script>
