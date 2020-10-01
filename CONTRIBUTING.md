@@ -1,7 +1,8 @@
 # Contributing
 
 # Assigned for Hacktoberfest2020
-![alt text][]
+
+![HF2020 Events 1600x400 Centered](https://user-images.githubusercontent.com/40708551/94805667-63792580-040a-11eb-84e9-81d5ec70c459.png)
 
 When contributing to this repository, please first discuss the change you wish to make via issue,
 email, or any other method with the owners of this repository before making a change. 
