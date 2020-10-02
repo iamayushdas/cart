@@ -1,20 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>404 not found</title>
-    <link rel="stylesheet" href="404.css">
-    
-<link href="https://fonts.googleapis.com/css?family=Lacquer&display=swap" rel="stylesheet">
-
-
-</head>
-<body>
-    <div class="container">
-      <h1>COMING SOON</h1>
-        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
            viewBox="0 0 1536.2 755.1" style="enable-background:new 0 0 1536.2 755.1;" xml:space="preserve">
         <style type="text/css">
           .st0{fill:#E6E7E8;}
@@ -1020,9 +1004,3 @@
           <path d="M489.3,238.1v28.8h-5.4l-2.9-11.8v11.8h-5.5v-28.8h5.4l2.9,11.5v-11.5H489.3z"/>
         </g>
         </svg>
-        </div>
-</body>
-</html>
-
-
-
