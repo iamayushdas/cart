@@ -1,4 +1,4 @@
-# Collcart
+# Collcart (College based ecommerce)
 
 ![Collcart](./public/images/iPhone.png)
 
