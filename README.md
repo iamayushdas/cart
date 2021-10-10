@@ -50,7 +50,7 @@ collcart
 
 2. Clone the project
 
-`git clone https://github.com/<user>/<project>`
+`git clone https://github.com/<username>/<project>`
 
 3. Initialize the app
 
