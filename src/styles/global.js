@@ -16,7 +16,7 @@ const Global = createGlobalStyle`
   }
 
   h1, h2 {
-    color: white
+    color: red;
   }
 
   h1 {
