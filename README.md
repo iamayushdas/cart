@@ -41,7 +41,7 @@ collcart
     |  index.js
 ```
 
-## Installation
+## Installation can be done through
 
 1. Prerequisites
 
