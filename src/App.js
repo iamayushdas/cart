@@ -11,10 +11,10 @@ function App() {
     <Router>
       <NavBar />
       <Switch>
+    <Route path="/404" component={PageNotFound} />
         <Route exact path="/" component={Landing} />
         <Route path="/signlog" component={SignLog} />
         <Route path="*" component={PageNotFound} />
-        <Route path="/404" component={PageNotFound} />
       </Switch>
     </Router>
   );
