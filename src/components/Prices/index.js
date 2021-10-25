@@ -57,6 +57,18 @@ export default function Prices() {
               <CardText>Drive and mega links</CardText>
               <Button>Watch</Button>
             </CardBody>
+                <CardBody>
+              <CardTitle><h2>updates</h2></CardTitle>
+              <CardText>Links for all popular series.</CardText>
+              <CardText>Drive and mega links</CardText>
+              <Button>Watch</Button>
+            </CardBody>
+                <CardBody>
+              <CardTitle><h2>news</h2></CardTitle>
+              <CardText>Links for all popular series.</CardText>
+              <CardText>Drive and mega links</CardText>
+              <Button>Watch</Button>
+            </CardBody>
           </Card>
         </Col>
       </Row>
