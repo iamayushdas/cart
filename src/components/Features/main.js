@@ -15,6 +15,24 @@ export const FeatContainer = styled.div`
 
     transition: color .2s ease-in-out
   }
+  
+    .featBox > i {
+    padding-bottom: 2%;
+
+    transition: color .2s ease-in-out
+  }
+  
+    .featBox > i {
+    padding-bottom: 2%;
+
+    transition: color .2s ease-in-out
+  }
+  
+    .featBox > i {
+    padding-bottom: 2%;
+
+    transition: color .2s ease-in-out
+  }
 
   .featBox > i:hover {
     color: #8f8f8f
